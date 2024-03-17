@@ -1,0 +1,13 @@
+package bestbuy_package;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class FindBy_Bestbuy {
+	@FindBy(name = "st")
+	public static WebElement searchbox;
+	
+	@FindBy(xpath = "/html/body/div[5]/main/div[4]/div/div/div/div/div/div/div[2]/div[2]/div[5]/div/div[4]/ol/li[2]/div/div/div/div/div/div[3]/div[3]/div/div/div/div/div/div[1]/button")
+	public static WebElement addtocart;
+
+}

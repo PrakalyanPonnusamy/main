@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name=" test suite">
+
+	<test name="Both_Correct">
+		<parameter name="username" value="test"></parameter>
+		<parameter name="password" value="test"></parameter>
+		<classes>
+			<class name="login_page_checker.Both_Correct">
+			</class>
+		</classes>
+	</test>
+
+	<test name="Both_Wrong">
+		<parameter name="username" value="test1"></parameter>
+		<parameter name="password" value="test1"></parameter>
+		<classes>
+			<class name="login_page_checker.Both_Wrong">
+			</class>
+		</classes>
+	</test>
+
+	<test name="Correct_UserName_Wrong_Password">
+		<parameter name="username" value="test"></parameter>
+		<parameter name="password" value="test1"></parameter>
+		<classes>
+			<class
+				name="login_page_checker.Correct_UserName_Wrong_Password">
+			</class>
+		</classes>
+	</test>
+
+	<test name="Wrong_UserName_Correct_Password">
+		<parameter name="username" value="test"></parameter>
+		<parameter name="password" value="test1"></parameter>
+		<classes>
+			<class
+				name="login_page_checker.Wrong_UserName_Correct_Password">
+			</class>
+		</classes>
+	</test>
+
+</suite>
+
+
+
+
+<!--<test></test>Here we are using the test name, as we have have test name in the java, to access that we are giving the test name 
+<paramenter></paramenter> to pass the values 
+<class></class> simply the location of the the file exist-->

@@ -1,0 +1,28 @@
+package config_property_file_reading;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class Config_properties_file_reader {
+
+	public static void main(String[] args) throws IOException {
+		FileInputStream stream = new FileInputStream("config.properties");
+		Properties properties = new Properties();
+		properties.load(stream);
+		String Browsers = properties.getProperty("browser");
+		String Location = properties.getProperty("location");
+		
+		if(Browsers.equalsIgnoreCase("edge")) {
+			System.setProperty("webdriver.edge.driver", Location);
+			WebDriver driver = new EdgeDriver();
+		}
+				
+		
+
+	}
+
+}

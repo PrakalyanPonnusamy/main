@@ -1,0 +1,14 @@
+package test;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class chrome {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "\"C:\\Program Files\\chromedriver.exe\"");
+		WebDriver driver = new ChromeDriver();
+		driver.navigate().to("https://www.bestbuy.com/?intl=nosplash");
+	}
+
+}

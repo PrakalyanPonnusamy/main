@@ -1,0 +1,10 @@
+package reading_and_writing_a_file_JSON;
+
+public class Reading_JSON {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

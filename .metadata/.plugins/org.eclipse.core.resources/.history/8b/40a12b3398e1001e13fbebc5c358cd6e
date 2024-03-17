@@ -1,0 +1,14 @@
+
+<!DOCTYPE appender SYSTEM ".classpath">
+<appender name="fileAppender"
+	class="org.apache.log4j.FileAppender">
+	<param name="Threshold" value="INFO" />
+	<param name="File" value="logfile.log" />
+	<layout class="org.apache.log4j.PatternLayout">
+		<param> name="ConversionPattern" value="%d %-5p [%c{1}] %m %n" </param>
+	</layout>
+</appender>
+<root>
+	<level value="INFO" />
+	<appender-ref ref="fileAppender" />
+</root>

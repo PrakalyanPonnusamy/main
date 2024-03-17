@@ -1,0 +1,10 @@
+package log4j_concepts;
+
+public class Using_Basic_configurator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

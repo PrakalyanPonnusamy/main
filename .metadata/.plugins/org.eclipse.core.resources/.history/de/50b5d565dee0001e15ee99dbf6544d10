@@ -1,0 +1,28 @@
+
+
+
+#rootlogger --->>> this is used to have the logging from INFO to the fatal, of the file that we are using
+
+log4j.rootlogger=INFO, file 
+
+#configurations to print the file (Appender)
+
+log4j.appender.file=org.apache.log4j.RollingFileAppender 
+# this defines that the logs should be printed one by one
+log4j.appender.file.File=C:\logging.log
+#Creating a file and storing it in one location that has mentioned above
+log4j.appender.file.MaxFileSize=12MB
+#Maximum filesize it can upload at a time is 12 MB
+log4j.appender.file.MaxBackupIndex=10
+#we can perform 10 backups of the files that we are storing 
+
+#LAYOUT
+log4j.appender.file.layout=org.apache.log4j.PatternLayout
+# this is for making the log to print in certain layout, here we are using pattern layout
+log4j.appender.file.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
+
+#%m%n > this is for Message 
+#%d{yyyy-mm-dd hh:mm:ss} > this is for date and time 
+#%-5p priority (i..e, INFO, WARE, ERROR, FATAL should be displayed)
+#%c{1} this is to get the class name alone{1} if we didn't mention anything it will be "packagename and classname"
+#:%L this is to print the line

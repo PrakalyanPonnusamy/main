@@ -1,0 +1,1 @@
+This is to store the contents in the RAW format, without encrypting kind of stuffs

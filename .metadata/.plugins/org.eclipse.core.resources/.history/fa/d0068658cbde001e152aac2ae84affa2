@@ -1,0 +1,27 @@
+package bestbuy_package;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+public class weppage_bestbuy_automation {
+	@SuppressWarnings("deprecation")
+	@Test
+	public void main() throws InterruptedException {
+		System.setProperty("webdriver.edge.driver", "C:\\Users\\praka\\eclipse-workspace\\selenium\\msedgedriver.exe");
+		WebDriver driver = new EdgeDriver();
+		driver.navigate().to("https://www.bestbuy.com/?intl=nosplash");
+		PageFactory.initElements(driver, FindBy_Bestbuy.class);
+		FindBy_Bestbuy.searchbox.sendKeys("6252354");
+		FindBy_Bestbuy.searchbox.sendKeys(Keys.ENTER);
+		FindBy_Bestbuy.addtocart.click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		FindBy_Bestbuy.gotocart.click();
+		FindBy_Bestbuy.checkout.click();
+	}
+
+}

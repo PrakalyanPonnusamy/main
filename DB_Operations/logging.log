@@ -1,0 +1,8 @@
+2024-03-13 07:28:12 INFO  Property_file_configurator:12 - This is info log
+2024-03-13 07:28:12 WARN  Property_file_configurator:13 - This is info log
+2024-03-13 07:28:12 ERROR Property_file_configurator:14 - This is info log
+2024-03-13 07:28:12 FATAL Property_file_configurator:15 - This is info log
+2024-03-13 07:37:14 INFO  Property_file_configurator:12 - This is info log
+2024-03-13 07:37:14 WARN  Property_file_configurator:13 - This is info log
+2024-03-13 07:37:14 ERROR Property_file_configurator:14 - This is info log
+2024-03-13 07:37:14 FATAL Property_file_configurator:15 - This is info log

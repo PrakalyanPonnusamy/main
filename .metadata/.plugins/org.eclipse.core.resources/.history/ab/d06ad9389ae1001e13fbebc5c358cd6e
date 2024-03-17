@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+    <log4j:configuration>
+         <appender name="FILE" class="org.apache.log4j.RollingFileAppender">
+            <param name="file"
+                value="D:/workspace_Testing/IdMUnitTests/logs/IdMUnitlog.log" />
+            <param name="immediateFlush" value="true" />
+            <param name="threshold" value="debug" />
+            <param name="append" value="false" />
+            <layout class="org.apache.log4j.PatternLayout">
+                <param name="ConversionPattern" value="%m%n" />
+            </layout>
+        </appender>
+
+        <category name="se.jayway.ddsteps">
+            <priority value="info"></priority>
+        </category>
+
+        <root>
+            <priority value="INFO"></priority>
+            <appender-ref ref="console" />
+            <appender-ref ref="FILE" />
+        </root>
+
+    </log4j:configuration>

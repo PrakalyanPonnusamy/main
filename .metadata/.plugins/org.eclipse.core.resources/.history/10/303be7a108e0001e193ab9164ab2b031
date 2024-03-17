@@ -1,0 +1,10 @@
+package config_property_file_reading;
+
+public class Config_properties_file_reader {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,24 @@
+package writing_a_file;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+
+public class Writing_Using_JSON_simple {
+
+	public static void main(String[] args) {
+		
+		JSONObject jsonobject = new JSONObject();
+		jsonobject.put("Name", "Prakalyan");
+		jsonobject.put("Nick Name", "Jana");
+		
+		JSONArray jsonArray = new JSONArray();
+		jsonArray.add("Prakalyan");
+		jsonArray.add("Prahalya");
+		
+		jsonobject.put("RP", jsonArray);
+		
+		
+
+	}
+
+}

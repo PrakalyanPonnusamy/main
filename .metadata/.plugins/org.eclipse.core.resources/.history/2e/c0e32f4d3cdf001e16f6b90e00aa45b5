@@ -1,0 +1,9 @@
+package filewriting_opeartions;
+
+public class Using_FileWriter {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

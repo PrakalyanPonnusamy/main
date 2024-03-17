@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appender name="file" class="org.apache.log4j.rolling.RollingFileAppender">
+        <param name="threshold" value="debug" />
+        <rollingPolicy name="file"
+            class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+            <param name="FileNamePattern" value="logs/MyLog-%d{yyyy-MM-dd-HH-mm}.log.gz" />
+            <!-- The below param will keep the live update file in a different location-->
+            <!-- param name="ActiveFileName" value="current/MyLog.log" /-->
+        </rollingPolicy>
+
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%5p %d{ISO8601} [%t][%x] %c - %m%n" />
+        </layout>
+</appender>

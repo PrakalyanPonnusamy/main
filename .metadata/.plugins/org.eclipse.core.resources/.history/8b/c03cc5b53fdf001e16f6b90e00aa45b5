@@ -1,0 +1,18 @@
+package filewriting_opeartions;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Using_ByteArray_FileOutputStream {
+
+	public static void main(String[] args) throws IOException {
+String Location = "ByteArray_.txt";
+String content = "This is to store the contents in the RAW format, without encrypting kind of stuffs";
+FileWriter filewriter = new FileWriter(Location);
+byte[] writethis = content.getBytes();
+
+
+	}
+
+}

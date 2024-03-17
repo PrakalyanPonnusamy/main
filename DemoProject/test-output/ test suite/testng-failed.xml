@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ test suite]">
+  <test thread-count="5" name="Both_Correct(failed)">
+    <parameter name="username" value="test"/>
+    <classes>
+      <class name="login_page_checker.Both_Correct">
+        <methods>
+          <include name="BothCorrect"/>
+        </methods>
+      </class> <!-- login_page_checker.Both_Correct -->
+    </classes>
+  </test> <!-- Both_Correct(failed) -->
+  <test thread-count="5" name="Both_Wrong(failed)">
+    <parameter name="username" value="test1"/>
+    <classes>
+      <class name="login_page_checker.Both_Wrong">
+        <methods>
+          <include name="BothWrong"/>
+        </methods>
+      </class> <!-- login_page_checker.Both_Wrong -->
+    </classes>
+  </test> <!-- Both_Wrong(failed) -->
+  <test thread-count="5" name="Correct_UserName_Wrong_Password(failed)">
+    <parameter name="username" value="test1"/>
+    <classes>
+      <class name="login_page_checker.Correct_UserName_Wrong_Password">
+        <methods>
+          <include name="Pass_Wrong"/>
+        </methods>
+      </class> <!-- login_page_checker.Correct_UserName_Wrong_Password -->
+    </classes>
+  </test> <!-- Correct_UserName_Wrong_Password(failed) -->
+  <test thread-count="5" name="Wrong_UserName_Correct_Password(failed)">
+    <parameter name="username" value="test1"/>
+    <classes>
+      <class name="login_page_checker.Wrong_UserName_Correct_Password">
+        <methods>
+          <include name="UN_wrong"/>
+        </methods>
+      </class> <!-- login_page_checker.Wrong_UserName_Correct_Password -->
+    </classes>
+  </test> <!-- Wrong_UserName_Correct_Password(failed) -->
+</suite> <!-- Failed suite [ test suite] -->

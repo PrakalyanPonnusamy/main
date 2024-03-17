@@ -1,0 +1,1 @@
+This type of think is used to store the contents in the txt document using path type

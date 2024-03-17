@@ -1,0 +1,16 @@
+package config_property_file_reading;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Properties;
+
+public class Config_properties_file_reader {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		FileInputStream stream = new FileInputStream("config.properties");
+		Properties properties = new Properties();
+		
+
+	}
+
+}

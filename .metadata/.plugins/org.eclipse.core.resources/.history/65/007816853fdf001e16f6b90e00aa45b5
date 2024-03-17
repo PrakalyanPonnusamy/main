@@ -1,0 +1,10 @@
+package filewriting_opeartions;
+
+public class Using_ByteArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

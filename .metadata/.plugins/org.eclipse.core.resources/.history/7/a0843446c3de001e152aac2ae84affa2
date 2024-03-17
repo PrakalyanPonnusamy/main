@@ -1,0 +1,15 @@
+package bestbuy_package;
+
+import java.sql.Driver;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class weppage_bestbuy_automation {
+	public void main() {
+		System.setProperty("webdriver.edge.driver", "C:\\Users\\praka\\eclipse-workspace\\selenium\\msedgedriver.exe");
+		WebDriver driver = new EdgeDriver();
+		driver.navigate().to("https://www.bestbuy.com/?intl=nosplash");
+	}
+
+}

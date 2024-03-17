@@ -1,0 +1,10 @@
+package bestbuy_package;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class FindBy_Bestbuy {
+@FindBy(id = "gh-search-input")
+public static WebElement searchbox;
+
+}

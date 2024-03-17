@@ -1,0 +1,18 @@
+package filereading_opeartions;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+public class Filedreader_ops {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		String location = "BufferedWriter_.txt";
+		FileReader filereader = new FileReader(location);
+		BufferedReader reader = new BufferedReader(filereader);
+		
+		
+
+	}
+
+}

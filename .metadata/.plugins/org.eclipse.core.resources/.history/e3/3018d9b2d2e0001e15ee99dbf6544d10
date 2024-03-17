@@ -1,0 +1,14 @@
+package log4j_concepts;
+
+import io.opentelemetry.api.logs.Logger;
+
+public class Using_Basic_configurator {
+
+	
+	static Logger logger = org.apache.log4j.Logger.getLogger(null)
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<suite name="TestSuite">
+<listeners>
+<listener class-name = "testNG.ListenersExamples">
+</listener></listeners>
+<test name="TestClass">
+<classes>
+<class name="testNG.BasicTest"></class>
+</classes>
+</test>
+</suite>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<parameter name="Name" value="Prahalya"></parameter>
+ <class name="testNG.Dependencies"></class>
+<class name="testNG.OpeningBrowsers"></class>
+<class name="testNG.Priority"></class> -->
+<!-- <groups>
+<run>
+<include name="Apple"></include>ś
+<include name="Lenovo"></include>
+</run>
+</groups> -->
+
+
+
+
+
+
+<!--parallel = "methods" thread-count="2">  Thread count we are giving for how many browsers should open and parallen = methosds is for parallel execution of method -->
