@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="test suite" parallel="methods" verbose="2" thread-count="2">
+<listners> <listner name="Itest_Annotation.Itest_anno"></listner></listners>
+<test name="suite">
+<classes>
+<class name="Itest_Annotation.Methods_2_retry">
+</class></classes></test></suite>
