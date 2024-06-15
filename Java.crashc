@@ -1,0 +1,34 @@
+//Java Program to print maximum among two numbers
+package testing;
+
+import java.util.Scanner;
+
+public class Testingss {
+	int Number1;
+	int Number2;
+	int largest;
+	Testingss(int num1, int num2){
+		Number1 = num1;
+		Number2 = num2;
+	}
+	public int mains() {
+		if(Number1>Number2) {
+			largest=Number1;
+		}
+		else {
+			largest=Number2;
+		}
+		return largest;
+	}
+	public static void main(String[] args) {
+		Scanner obj = new Scanner(System.in);
+		System.out.println("Enter the first Number : ");
+		int first = obj.nextInt();
+		System.out.println("Enter the Second number : ");
+		int second = obj.nextInt();
+		Testingss testingss = new Testingss(first, second);
+		System.out.println("Largest is : "+ testingss.mains());
+		
+	}
+
+}
