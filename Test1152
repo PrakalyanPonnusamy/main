@@ -1,0 +1,42 @@
+Compare three numbers
+
+package testing;
+
+import java.util.Scanner;
+
+public class Testingss {
+	int Number1;
+	int Number2;
+	int Number3;
+	int largest;
+	Testingss(int num1, int num2,int num3){
+		Number1 = num1;
+		Number2 = num2;
+		Number3 = num3;
+	}
+	public int mains() {
+		if(Number1>Number2 | Number1>Number3)
+			System.out.println("Number1");
+		else if(Number2 > Number3)
+			System.out.println("Number1");
+
+		else if(Number1 == Number2 && Number1 == Number3)
+			largest=1;
+		else
+			System.out.println("Number1");
+		return largest;
+	}
+	public static void main(String[] args) {
+		Scanner obj = new Scanner(System.in);
+		System.out.print("Enter the first Number : ");
+		int first = obj.nextInt();
+		System.out.print("Enter the Second number : ");
+		int second = obj.nextInt();
+		System.out.print("Enter the Third number : ");
+		int Third = obj.nextInt();
+		Testingss testingss = new Testingss(first, second, Third);
+		System.out.println("Largest is : "+ testingss.mains());
+
+	}
+
+}
